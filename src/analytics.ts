@@ -5,7 +5,7 @@ import { ErrorHandler, NativeWrapper } from './wrapper'
 
 // prettier-ignore
 export module Analytics {
-	export type Integration = (() => PromiseLike<void>) | { disabled: true }
+	// export type Integration = (() => PromiseLike<void>) | { disabled: true }
 
 	export interface Configuration {
 		/**
@@ -33,7 +33,7 @@ export module Analytics {
 		/**
 		 * Register a set of integrations to be used with this Analytics instance.
 		 */
-		using?: Integration[]
+		// using?: Integration[]
 		debug?: boolean
 
     /**
